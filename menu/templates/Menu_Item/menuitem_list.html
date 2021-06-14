@@ -1,0 +1,10 @@
+<h1>Django Menu App</h1>
+
+<ul>
+  {% for menuitem in object_list %}
+  <li>
+    <h2>{{menuitem.food}}</h2>
+    <p>{{menuitem.price}}</p>
+  </li>
+  {% endfor %}
+</ul>
