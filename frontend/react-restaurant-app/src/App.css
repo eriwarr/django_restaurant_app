@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: transparent;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #558776;
+  border: solid 5px #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.body {
+  padding: 100px;
+
+}
+
+img{
+  width: 100%;
+  height: 250px;
+}
+
+.order{
+  position: fixed;
+  right: 100px;
+}
+
+
+.Modal{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Modal-content {
+  width: 500px;
+  background-color: #558776;
+}
+
+.Modal-header, .Modal-footer {
+  padding: 10px;
+}
+
+.Modal-title {
+  margin: 0;
+}
+
+.Modal-body {
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+h5 {
+  color: #558776;
+}
