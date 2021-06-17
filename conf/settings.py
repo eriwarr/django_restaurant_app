@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['SECRET_KEY']
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -48,7 +47,10 @@ INSTALLED_APPS = [
 
     # local
     'api.apps.ApiConfig',
+    'order_api.apps.OrderApiConfig',
+    'frontend.apps.FrontendConfig',
     'menu.apps.MenuConfig',
+    'orders.apps.OrdersConfig',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +141,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/react-restaurant-app')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'frontend/react-restaurant-app/build/static'),
+)
+
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False,
+    # Your other settings
+}
