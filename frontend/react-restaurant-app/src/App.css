@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  background: url("https://media.istockphoto.com/vectors/seamless-italian-pizza-pattern-on-black-background-vintage-pizza-vector-id1137028124?k=6&m=1137028124&s=612x612&w=0&h=5RQTk8_WBottBuDG_0ehMONtU1VA4ISWLB_fpcsfPCM=")
 }
 
 .App-logo {
@@ -16,30 +17,15 @@
 }
 
 .App-header {
-  background: transparent;
+  background: white;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #558776;
   border: solid 5px #fff;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #DA0037;
 }
 
 .body {
@@ -56,7 +42,6 @@ img{
   position: fixed;
   right: 100px;
 }
-
 
 .Modal{
 position: fixed;
@@ -91,4 +76,8 @@ justify-content: center;
 
 h5 {
   color: #558776;
+}
+
+.line-through{
+  text-decoration: line-through;
 }
